@@ -14,15 +14,15 @@ export async function updatePostAction(
   prevState: FormState,
   formData: FormData
 ): Promise<FormState> {
-  const rawData = {
+  const input = {
     id: formData.get("id"),
     content: formData.get("content"),
   };
 
-  const validation = validate(updatePostInputSchema, rawData);
+  const validation = validate(updatePostInputSchema, input);
   if (validation.isErr()) {
     return {
-      input: rawData,
+      input,
       error: validation.error,
     };
   }
@@ -31,15 +31,15 @@ export async function updatePostAction(
 
   if (result.isErr()) {
     return {
-      input: rawData,
+      input,
       error: result.error,
     };
   }
 
-  revalidatePath(`/post/${rawData.id}`);
+  revalidatePath(`/post/${input.id}`);
 
   return {
-    input: rawData,
+    input,
     result: result.value,
     error: null
   };
