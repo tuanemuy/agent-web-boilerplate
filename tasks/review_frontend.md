@@ -3,14 +3,14 @@
 ## 背景
 
 - `docs/requirements.md` に要件を定義した
-- `docs/frontend.md` にフロントエンドの設計を記載した
+- `docs/frontend.md` にフロントエンドの実装例を記載した
 - `docs/usecases.tsv` に想定されるページ構成とユースケースを定義した
 
 ## タスク
 
 - 実装が設計に従っているか確認する
 - コードの品質をレビューする
-- `docs/review_frontend.md` を更新する
+- `logs/${yyyyMMddHHmm}_review_frontend.md` を更新する
 
 ## 備考
 

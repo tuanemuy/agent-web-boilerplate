@@ -3,7 +3,7 @@
 ## 背景
 
 - `docs/requirements.md` に要件を定義した
-- `docs/backend.md` にバックエンドの設計を記載した
+- `docs/backend.md` にバックエンドの実装例を記載した
 - `docs/test.md` にテストの設計を記載した
 - `docs/usecases.tsv` に想定されるページ構成とユースケースを定義した
 
@@ -11,7 +11,7 @@
 
 - テストの実装が設計に従っているか確認する
 - テストの品質をレビューする
-- `docs/review_test.md` を更新する
+- `logs/${yyyyMMddHHmm}_review_test.md` を更新する
 
 ## 備考
 
